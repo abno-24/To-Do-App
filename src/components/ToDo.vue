@@ -1,8 +1,6 @@
 <template>
     <div class="to-do">
-        <h1 class="text-3xl font-bold underline">
-         ToDo Application!
-       </h1>
+        
     </div>
 </template>
 <script>
