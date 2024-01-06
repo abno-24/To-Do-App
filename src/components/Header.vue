@@ -1,5 +1,5 @@
 <template>
-    <div class="header flex justify-between items-center">
+    <div class="header flex justify-between items-center sm:px-3 md:px-3 py-2 px-20">
         <h1 class="text-xl font-bold">To-Do</h1>
         <div class="icon">
             <a href="https://github.com/abno-24/To-Do-App" target="_blank" class="hover:fill-sky-400">
@@ -22,7 +22,7 @@ export default {
         top: 0;
         width: 100vw;
         height: 4rem;
-        padding: 0.3rem 5rem;
+        /* padding: 0.3rem 5rem; */
         box-shadow: 0 2px 14px 1px rgba(0, 0, 0, 0.03);
     }
     /* svg:hover {
