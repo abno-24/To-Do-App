@@ -1,11 +1,12 @@
 <script>
 import Header from './components/Header.vue';
 import ToDo from './components/ToDo.vue';
+import Info from './components/Info.vue';
 
 export default {
     setup() {
     },
-    components: { ToDo, Header }
+    components: { ToDo, Header, Info }
 }
 </script>
 
@@ -13,6 +14,7 @@ export default {
   <div id="app">
     <Header />
     <ToDo />
+    <Info />
   </div>
 </template>
 
