@@ -12,7 +12,13 @@
 </template>
 <script>
 export default {
+    // setup() {
+    //     const showImage = () => {
+    //         console.log("Clicked!");
+    //     }
 
+    //     return showImage
+    // }
 }
 </script>
 <style></style>

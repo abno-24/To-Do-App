@@ -6,7 +6,7 @@ import Info from './components/Info.vue';
 export default {
     setup() {
     },
-    components: { ToDo, Header, Info }
+    components: { Header, ToDo, Info }
 }
 </script>
 
