@@ -6,7 +6,7 @@
             cancel
         </span>
         <img src="/imgs/matrix.png" alt="Image" class="w-[40%] max-md:w-[90%]">
-        <p class="text-white text-center">
+        <p class="text-white text-center mx-4">
             The image above presents a framework to guide you in creating a productive to-do list for the day!
         </p>
     </div>
