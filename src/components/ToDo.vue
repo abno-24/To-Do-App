@@ -1,5 +1,10 @@
 <template>
-    <div class="task-input w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%]">
+    <button v-if="toggleForm == false" class="bg-blue-400 rounded-3xl px-4 py-2 w-[20%] text-white text-lg hover:scale-95 transition-transform"
+        @click="displayForm">
+        Add Task
+    </button>
+    <div v-if="toggleForm == true"
+        class="w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%]">
         <div class="flex flex-col w-[50%] gap-y-1 max-md:w-[90%] max-lg:w-[80%]">
             <label for="task">Task Name</label>
             <input type="text" id="task"
@@ -26,17 +31,34 @@
                 class="p-3 border-2 border-gray-400-200 top-7 rounded-lg shadow-[0_8px_14px_1px_rgba(96,165,250,0.1)] outline-none"
                 placeholder="Name">
         </div>
+        <div class="flex justify-end items-center w-[50%] max-md:w-[90%] max-lg:w-[80%] gap-4">
+            <button
+                class="bg-green-400 rounded-3xl px-4 py-2 self-end w-[20%] text-white text-lg hover:scale-95 transition-transform"
+                @click="saveData">
+                Save
+            </button>
+            <button
+                class="bg-red-400 rounded-3xl px-4 py-2 self-end w-[20%] text-white text-lg hover:scale-95 transition-transform"
+                @click="hideForm">
+                Cancel
+            </button>
+        </div>
     </div>
 </template>
-<script>
-export default {
+<script setup>
+import { ref } from 'vue';
+let toggleForm = ref(false);
 
+const displayForm = () => {
+    toggleForm.value = !toggleForm.value;
+}
+
+const hideForm = () => {
+    toggleForm.value = false;
+}
+
+const saveData = () => {
+    console.log("This btn will save data of the form!");
 }
 </script>
-<style scoped>
-.form {
-    border: 1px solid red;
-    width: 50%;
-    text-align: center;
-}
-</style>
+<style></style>

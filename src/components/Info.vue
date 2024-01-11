@@ -1,7 +1,7 @@
 <template>
     <div v-if="toggleImg == true"
         class="absolute w-full h-full border bg-gray-800/[.3] flex justify-center items-center flex-col gap-4">
-        <span class="material-symbols-outlined self-end mr-4 text-white cursor-pointer text-4xl max-md:text-3xl"
+        <span class="material-symbols-outlined self-end mr-4 text-red-500 cursor-pointer text-4xl max-md:text-3xl"
             @click="closeImg">
             cancel
         </span>
@@ -27,12 +27,13 @@ import { ref } from 'vue';
 
 let toggleImg = ref(false);
 
-function showImg() {
+// Function to display image on click event
+const showImg = () => {
     toggleImg.value = !toggleImg.value;
-    console.log(toggleImg.value);
 }
 
-function closeImg() {
+// Function to hide image on click event
+const closeImg = () => {
     toggleImg.value = false;
 }
 </script>
