@@ -5,7 +5,7 @@
             @click="closeImg">
             cancel
         </span>
-        <img src="/imgs/matrix.png" alt="Image" class="w-[60%] max-md:w-[90%]">
+        <img src="/imgs/matrix.png" alt="Image" class="w-[40%] max-md:w-[90%]">
         <p class="text-white text-center">
             The image above presents a framework to guide you in creating a productive to-do list for the day!
         </p>
