@@ -6,8 +6,8 @@
             cancel
         </span>
         <img src="/imgs/matrix.png" alt="Image" class="w-[40%] max-md:w-[90%]">
-        <p class="text-white text-center mx-4">
-            The image above presents a framework to guide you in creating a productive to-do list for the day!
+        <p class="text-white text-center mx-4 italic">
+            "The image above presents a framework to guide you in creating a productive to-do list for the day!"
         </p>
     </div>
     <div v-else class="absolute top-20 w-full h-12 flex justify-end items-center pr-20 max-md:pr-8">
