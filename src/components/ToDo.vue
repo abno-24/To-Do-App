@@ -1,10 +1,10 @@
 <template>
     <button v-if="toggleForm == false"
-        class="bg-blue-400 rounded-3xl px-4 py-2 w-[20%] text-white text-lg hover:scale-95 transition-transform"
+        class="bg-blue-400 rounded-3xl px-4 py-2 w-[20%] max-lg:w-[50%] text-white text-lg hover:scale-95 transition-transform"
         @click="displayForm">
         Add Task
     </button>
-    <div v-if="toggleForm == true" class="w-[60%] max-md:w-[100%] max-lg:w-[90%]">
+    <div v-if="toggleForm == true" class="w-full mx-auto flex justify-center items-center">
         <form class="w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%]">
             <div class="flex flex-col w-[50%] gap-y-1 max-md:w-[90%] max-lg:w-[80%]">
                 <label for="task">Task Name</label>
@@ -34,12 +34,12 @@
             </div>
             <div class="flex justify-end items-center w-[50%] max-md:w-[90%] max-lg:w-[80%] gap-4">
                 <button type="submit"
-                    class="bg-green-400 rounded-3xl px-4 py-2 self-end w-[20%] text-white text-lg hover:scale-95 transition-transform"
+                    class="bg-green-400 rounded-3xl px-4 py-2 self-end w-[20%] max-lg:w-[30%] text-white text-lg hover:scale-95 transition-transform"
                     @click="saveData">
                     Save
                 </button>
                 <button
-                    class="bg-red-400 rounded-3xl px-4 py-2 self-end w-[20%] text-white text-lg hover:scale-95 transition-transform"
+                    class="bg-red-400 rounded-3xl px-4 py-2 self-end w-[20%] max-lg:w-[30%] text-white text-lg hover:scale-95 transition-transform"
                     @click="hideForm">
                     Cancel
                 </button>
