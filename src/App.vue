@@ -4,11 +4,11 @@
     <Info />
     <NewTask />
     <hr class="my-4 bg-white" />
-    <div class="border-b-2 border-gray-200 max-md:w-[90%]">
+    <div class="border-b-2 mb-2 border-gray-200 max-md:w-[98%]">
         <p class="italic font-extralight text-gray-400">Tasks</p>
     </div>
-    <ul class="max-md:w-[85%]">
-      <TaskList v-for="task in tasks" :key="task" :tasks="task" />
+    <ul class="max-md:w-[90%]">
+      <TaskList v-for="task in tasks" :key="task.id" :tasks="task" />
     </ul>
   </div>
 </template>
