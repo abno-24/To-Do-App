@@ -4,7 +4,7 @@
         @click="displayForm">
         Add Task
     </button>
-    <div v-if="toggleForm == true" class="w-full mx-auto flex justify-center items-center">
+    <div v-if="toggleForm == true" class="relative w-full mx-auto flex justify-center items-center top-[150px] mb-36">
         <form class="w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%] lg:w-[90%]">
             <div class="flex flex-col w-[50%] gap-y-1 max-md:w-[90%] max-lg:w-[80%]">
                 <label for="task">Task Name</label>
