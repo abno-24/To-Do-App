@@ -7,7 +7,7 @@
     <div class="border-b-2 mb-2 border-gray-200 max-md:w-[98%]">
         <p class="italic font-extralight text-gray-400">Tasks</p>
     </div>
-    <ul class="relative max-md:w-[90%] mb-12">
+    <ul class="relative max-md:w-[90%] pb-8">
       <TaskList v-for="task in tasks" :key="task.id" :tasks="task" />
     </ul>
   </div>
