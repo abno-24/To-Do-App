@@ -2,7 +2,7 @@
   <div id="app" class="flex flex-col">
     <Header />
     <Info />
-    <NewTask />
+    <NewTask :tasks="tasks" />
     <hr class="my-4 bg-white" />
     <div class="border-b-2 mb-2 border-gray-200 max-md:w-[98%]">
         <p class="italic font-extralight text-gray-400">Tasks</p>

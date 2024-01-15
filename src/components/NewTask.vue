@@ -5,7 +5,7 @@
         Add Task
     </button>
     <div v-if="toggleForm == true" class="relative w-full mx-auto flex justify-center items-center top-[200px] mb-48">
-        <form class="w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%] lg:w-[90%]">
+        <form @submit="saveData" class="w-[60%] flex justify-center items-center flex-col gap-y-6 max-md:w-[100%] max-lg:w-[90%] lg:w-[90%]">
             <div class="flex flex-col w-[50%] gap-y-1 max-md:w-[90%] max-lg:w-[80%]">
                 <label for="task">Task Name</label>
                 <input type="text" id="task" v-model="taskName" required
@@ -48,6 +48,7 @@
     </div>
 </template>
 <script setup>
+defineProps(['tasks']);
 import { ref } from 'vue';
 let taskName, assignedTo;
 let toggleForm = ref(false);
@@ -61,7 +62,9 @@ const hideForm = () => {
 }
 
 const saveData = () => {
-    console.log(taskName);
+    // preventDefault();
+    tasks.push(taskName);
+    console.log(tasks);
 }
 
 </script>
